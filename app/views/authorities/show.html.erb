@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id:</strong>
+  <%= @authority.id %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @authority.name %>
+</p>
+
+<p>
+  <strong>Subid:</strong>
+  <%= @authority.subId %>
+</p>
+
+<p>
+  <strong>Code:</strong>
+  <%= @authority.code %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @authority.description %>
+</p>
+
+<p>
+  <strong>Authority groupid:</strong>
+  <%= @authority.authority_groupId %>
+</p>
+
+<%= link_to 'Edit', edit_authority_path(@authority) %> |
+<%= link_to 'Back', authorities_path %>

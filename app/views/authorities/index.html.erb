@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Authorities</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Subid</th>
+      <th>Code</th>
+      <th>Description</th>
+      <th>Authority groupid</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @authorities.each do |authority| %>
+      <tr>
+        <td><%= authority.id %></td>
+        <td><%= authority.name %></td>
+        <td><%= authority.subId %></td>
+        <td><%= authority.code %></td>
+        <td><%= authority.description %></td>
+        <td><%= authority.authority_groupId %></td>
+        <td><%= link_to 'Show', authority %></td>
+        <td><%= link_to 'Edit', edit_authority_path(authority) %></td>
+        <td><%= link_to 'Destroy', authority, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Authority', new_authority_path %>
