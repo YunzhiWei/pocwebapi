@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 
+  name: MyString
+  subId: 
+  code: 
+  description: MyString
+  authority_groupId: 
+
+two:
+  id: 
+  name: MyString
+  subId: 
+  code: 
+  description: MyString
+  authority_groupId: 
