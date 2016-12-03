@@ -64,6 +64,7 @@ GEM
       railties (>= 4.2.0)
       thor (>= 0.14, < 2.0)
     json (1.8.3)
+    json_pure (2.0.2)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
     mail (2.6.4)
@@ -161,6 +162,7 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   jbuilder (~> 2.0)
   jquery-rails
+  json_pure
   mongoid (~> 5.0.0)
   rails (= 4.2.5.1)
   sass-rails (~> 5.0)
