@@ -140,9 +140,6 @@ test:
 production:
   clients:
     default:
-      database: universal
-      hosts:
-        - ds017205.mlab.com:17205
+      uri: <%= ENV[MONGOLAB_URI] %>
       options:
-        user: 'Chris'
-        password: 'Chris0215'
+        connect_timeout: 15
