@@ -3,7 +3,8 @@ development:
   clients:
     # Defines the default client. (required)
     default:
-      uri: mongodb://Chris:Chris0215@ds017205.mlab.com:17205/universal
+      # uri: mongodb://Chris:Chris0215@ds017205.mlab.com:17205/universal
+      uri: <%= ENV['MONGOLAB_URI'] %>
 
       # Defines the name of the default database that Mongoid can connect to.
       # (required).
@@ -144,7 +145,7 @@ test:
 production:
   clients:
     default:
-      # uri: %= ENV[MONGOLAB_URI] %> # mongodb://Chris:Chris0215@ds017205.mlab.com:17205/universal
-      uri: mongodb://Chris:Chris0215@ds017205.mlab.com:17205/universal
+      # uri: mongodb://Chris:Chris0215@ds017205.mlab.com:17205/universal
+      uri: <%= ENV['MONGOLAB_URI'] %>
       options:
         connect_timeout: 15
