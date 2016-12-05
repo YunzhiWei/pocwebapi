@@ -3,16 +3,20 @@ development:
   clients:
     # Defines the default client. (required)
     default:
+      uri: mongodb://Chris:Chris0215@ds017205.mlab.com:17205/universal
+
       # Defines the name of the default database that Mongoid can connect to.
       # (required).
       # database: poc_po_development
-      database: universal
+      # database: universal
       # Provides the hosts the default client can connect to. Must be an array
       # of host:port pairs. (required)
-      hosts:
+      # hosts:
         # - localhost:27017
-        - ds017205.mlab.com:17205
+        # - ds017205.mlab.com:17205
       options:
+        connect_timeout: 15
+
         # Change the default write concern. (default = { w: 1 })
         # write:
         #   w: 1
@@ -26,10 +30,10 @@ development:
         #     - use: web
 
         # The name of the user for authentication.
-        user: 'Chris'
+        # user: 'Chris'
 
         # The password of the user for authentication.
-        password: 'Chris0215'
+        # password: 'Chris0215'
 
         # The user's database roles.
         # roles:
@@ -140,6 +144,7 @@ test:
 production:
   clients:
     default:
-      uri: <%= ENV[MONGOLAB_URI] %>
+      # uri: %= ENV[MONGOLAB_URI] %> # mongodb://Chris:Chris0215@ds017205.mlab.com:17205/universal
+      uri: mongodb://Chris:Chris0215@ds017205.mlab.com:17205/universal
       options:
         connect_timeout: 15
