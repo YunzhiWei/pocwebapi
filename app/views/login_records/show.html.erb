@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id:</strong>
+  <%= @login_record.id %>
+</p>
+
+<p>
+  <strong>Source:</strong>
+  <%= @login_record.source %>
+</p>
+
+<p>
+  <strong>Datetime:</strong>
+  <%= @login_record.datetime %>
+</p>
+
+<%= link_to 'Edit', edit_login_record_path(@login_record) %> |
+<%= link_to 'Back', login_records_path %>
