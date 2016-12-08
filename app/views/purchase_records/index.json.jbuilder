@@ -1,0 +1,1 @@
+json.array! @purchase_records, partial: 'purchase_records/purchase_record', as: :purchase_record

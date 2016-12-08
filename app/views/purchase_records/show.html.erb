@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id:</strong>
+  <%= @purchase_record.id %>
+</p>
+
+<p>
+  <strong>Source:</strong>
+  <%= @purchase_record.source %>
+</p>
+
+<p>
+  <strong>Datetime:</strong>
+  <%= @purchase_record.datetime %>
+</p>
+
+<%= link_to 'Edit', edit_purchase_record_path(@purchase_record) %> |
+<%= link_to 'Back', purchase_records_path %>

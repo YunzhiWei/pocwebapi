@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   resources :authorities
+  resources :login_records
+  resources :purchase_records
 
 
   # The priority is based upon order of creation: first created -> highest priority.

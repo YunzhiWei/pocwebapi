@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Purchase Records</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Source</th>
+      <th>Datetime</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @purchase_records.each do |purchase_record| %>
+      <tr>
+        <td><%= purchase_record.id %></td>
+        <td><%= purchase_record.source %></td>
+        <td><%= purchase_record.datetime %></td>
+        <td><%= link_to 'Show', purchase_record %></td>
+        <td><%= link_to 'Edit', edit_purchase_record_path(purchase_record) %></td>
+        <td><%= link_to 'Destroy', purchase_record, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Purchase record', new_purchase_record_path %>
